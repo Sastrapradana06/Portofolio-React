@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Arvo:ital,wght@1,400;1,700&family=Comfortaa&family=DynaPuff&family=Inconsolata&family=Josefin+Sans:wght@300&family=Martian+Mono:wght@600&family=Merriweather:wght@400;700&family=Montserrat&family=Mukta&family=Noto+Sans+JP:wght@400;500&family=Noto+Sans+NKo&family=Oswald&family=Poppins:wght@400;500&family=Righteous&family=Roboto+Mono:wght@100;500&family=Roboto:wght@100&family=Satisfy&family=Signika+Negative:wght@300;400&family=Ubuntu&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.font-nama {
+    font-family: 'Martian Mono', monospace;
+}
+
+.navbar-open {
+    animation: animateNavbarOpen .5s forwards;
+    z-index: 1000;
+}
+
+.navbar-close {
+    animation: animateNavbarClose .5s forwards;
+    z-index: 1000;
+}
+
+.btn-page:hover  p {
+    color: white;
+    opacity: 1;
+    text-shadow: 0 2px 10px rgba(41, 244, 255, 0.7);
+}
+
+.btn-page p {
+    /* border-bottom: 1px solid transparent; */
+    /* color: transparent; */
+    opacity: 0;
+    font-size: .9rem;
+    transition: ease-in-out .5s;
+}
+
+.navbar-close p {
+    opacity: 0;
+}
+
+@keyframes animateNavbarOpen {
+    0% {
+        left: -60px;
+    }
+    100% {
+        left: 0;
+    }
+}
+@keyframes animateNavbarClose {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -100px;
+    }
+}
+
+
+.bg-blur-white {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.bg-home {
+    background-image: url(./assets/4.jpg);
+    /* background-position: ; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: center;
+    position: relative;
+    z-index: -4100;
+    top: 0;
+}
+
+
+.bg-home::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Ganti dengan warna latar belakang yang diinginkan */
+    z-index: 6;
+}
+
+.btn-home {
+    color: gray;
+}
+
+.btn-home:focus .icons-home {
+    color: rgb(20, 255, 255);
+}
+
+.bg-about {
+    background: rgba(10, 10, 10, 0.92);
+    border-bottom: 1px solid rgba(47, 45, 45, 0.595);
+}
+
+.card-about {
+    overflow: hidden;
+    animation: animateCardAbout 1s forwards;
+    height: 150px;
+}
+.card-skill {
+    overflow: hidden;
+    animation: animateCardSkill 1s forwards;
+    /* height: 100px; */
+}
+
+@keyframes animateCardAbout {
+    0% {
+        height: 0px;
+    }
+    100% {
+        height: 170px;
+    }
+}
+@keyframes animateCardSkill {
+    0% {
+        height: 0px;
+    }
+    100% {
+        height: 160px;
+    }
+}
+
+
+.bg-about-2 {
+    background-color: rgb(20, 255, 255,.1);
+    backdrop-filter: blur(5px);
+}
+
+.img-saya {
+    background-image: url(./assets/me2.jpg);
+    background-size: cover;
+    object-fit: cover;
+    /* background-position: 0 -30px; */
+    filter: brightness(.6); 
+    border: 2px solid rgb(43, 42, 42);
+}
+
+.about-aktif {
+    color: aqua;
+    text-shadow: 0px 5px 20px rgba(34, 181, 207, 0.8);
+    transition: all .3s;
+}
+.skill-aktif {
+    color: aqua;
+    text-shadow: 0px 5px 20px rgba(34, 181, 207, 0.8);
+    transition: all .3s;
+}
+
+.a {
+    color: rgb(61, 58, 162);
+}
+
+
+.bg-project {
+    background: rgba(10, 10, 10, 0.92);
+    border-bottom: 1px solid rgba(47, 45, 45, 0.595);
+}
+
+/* Scatter */
+#bg-scatter {
+    background-image: linear-gradient(to bottom, rgba(0, 162, 255, 0.225), black);
+}
+#bg-alquran {
+    background-image: linear-gradient(to bottom, rgba(10, 136, 136, 0.225), black);
+}
+#bg-catatan {
+    background-image: linear-gradient(to bottom, rgba(139, 61, 5, 0.425), black);
+}
+
+#border-scatter {
+    width: 130px;
+    height: 10px;
+    margin-top: -15px;
+    transform: rotate(-5deg);
+    background-color: blue;
+    position: relative;
+    z-index: 4;
+}
+#border-alquran {
+    width: 170px;
+    height: 10px;
+    margin-top: -15px;
+    transform: rotate(-4deg);
+    background-color: teal;
+    position: relative;
+    z-index: 4;
+}
+#border-catatanku {
+    width: 130px;
+    height: 10px;
+    margin-top: -15px;
+    transform: rotate(-5deg);
+    background-color: orange;
+    position: relative;
+    z-index: 4;
+}
+
+#img-scatter {
+    background-image: url(./assets/ASC.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -18px;
+}
+#img-alquran {
+    background-image: url(./assets/Alquran.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -18px;
+    filter: contrast(2)
+}
+#img-catatanku {
+    background-image: url(./assets/Cataanku.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -18px;
+    filter: contrast(2)
+}
+
+.bg-contact {
+    background-image: url(./assets/bg-contact-mobile.svg);
+}
+
+#img-contact {
+    background-image: url(./assets/contact_us_2.svg);
+    background-size: cover;
+    object-fit: cover;
+    width: 1000px;
+    height: 193px;
+}
+
+@media (min-width: 1024px) { 
+    .bg-home {
+        background-position: 0 -300px;
+    }
+    .card-about {
+        animation: animateCardAbout 1s forwards;
+        height: 150px;
+    }
+    #img-scatter {
+        background-position: 0px -75px;
+    }
+    #img-alquran {
+        background-position: 0px -75px;
+    }
+    #img-catatanku {
+        background-position: 0px -75px;
+    }
+    #img-contact {
+        background-size: cover;
+        object-fit: cover;
+        width: 300px;
+        height: 520px;
+        /* border: 1px solid black; */
+    }
+}
+
+
+/* #img-scatter-2 {
+    background-image: url(./assets/SC_Sidebar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 5px -10px;
+}
+#img-scatter-3 {
+    background-image: url(./assets/SC_Edit.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 5px -10px;
+} */
+
+
