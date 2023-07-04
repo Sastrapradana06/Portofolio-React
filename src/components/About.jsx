@@ -76,7 +76,7 @@ export default function About() {
           <div className="border-t border-b w-[100%] m-auto  p-1 lg:w-[80%]">
             {isAbout ? (
               <div className="card-about ">
-                <p className="text-[.7rem] mt-0  text-gray-400 lg:text-[1.1rem] lg:p-1 lg:mt-2">
+                <p className="text-[.7rem] mt-0  text-gray-400 lg:text-[1.1rem] lg:p-1 lg:mt-1">
                   "Halo, perkenalkan, nama saya Sastra Pradana asal Medan. Saya seorang mahasiswa yang memiliki minat di bidang Web Developer terutama di front-end developer dengan pengalaman dalam membangun antarmuka pengguna yang menarik dan
                   responsif. </p>
                 <p  className="text-[.7rem] mt-1  text-gray-400 lg:text-[1.1rem] lg:p-1 lg:mt-1">Saya senang bekerja dalam tim untuk menghadirkan solusi kreatif yang dapat meningkatkan
@@ -85,7 +85,7 @@ export default function About() {
               </div>
             ) : null}
             {isSkill ? (
-              <div className=" flex items-center justify-around flex-wrap card-skill">
+              <div className=" flex items-center justify-around flex-wrap card-skill w-[90%] lg:w-full m-auto">
                 {skill.map((skills, i) => {
                   return (
                     <div className="w-[60px]  flex justify-center items-center flex-col hover:-translate-y-3 duration-300 animate-pulse" key={i}>
@@ -97,7 +97,7 @@ export default function About() {
             ) : null}
           </div>
         </div>
-        <div className=" mt-2 flex items-center gap-6 pb-2">
+        <div className=" mt-2 flex items-center gap-6 pb-2 ">
           <a href="">
             <button className="text-[white] hover:text-[aqua] duration-300">
               <a href="https://github.com/Sastrapradana06?tab=repositories">
