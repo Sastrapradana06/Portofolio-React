@@ -47,7 +47,7 @@ export default function Project() {
                 <div className=" flex flex-col gap-3 lg:gap-5" >
                 {project.map((projects, i) => {
                     return (
-                        <div id={projects.classBg} className="w-full border h-max lg:h-max flex flex-col  items-center gap-2 mt-4 rounded-lg relative " key={i}  data-aos="flip-down" data-aos-duration="800" >
+                        <div id={projects.classBg} className="w-full border h-max lg:h-max flex flex-col  items-center gap-2 mt-4 rounded-lg relative " key={i}  data-aos="flip-down" data-aos-duration="600" >
                                 <div className="text-center relative z-10">
                                     <h1 className="text-[1.3rem] relative z-[12] lg:text-[1.5rem]">{projects.Nama}</h1>
                                     <p id={projects.classBorder} className="m-auto"></p>

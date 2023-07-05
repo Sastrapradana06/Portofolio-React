@@ -51,7 +51,7 @@ export default function Navbar() {
                 {iconsNav.map((pages, i) => {
                     return (
                         <div className="container-icons  w-[30px]" key={i}>
-                            <button className=" items-center gap-1 text-[gray] text-[25px] hover:text-[aqua] duration-300 flex btn-page">
+                            <button className=" items-center gap-1 text-[gray] text-[25px] hover:text-[aqua] duration-300 flex btn-page hover:bg-[rgba(255,255,255,0.1)] rounded-xl p-1">
                                 {pages.icons}
                                 <p className="text-page" id="text-page">
                                     <a href={pages.url} >
