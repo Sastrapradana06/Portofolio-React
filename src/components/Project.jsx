@@ -8,7 +8,7 @@ export default function Project() {
         {
             Nama: 'ScatterApp.com',
             deskripsi: 'Meniru Tampilan Dari Aplikasi Twitter',
-            teknologi: [<BiLogoReact color="rgb(47, 252, 255)"/>, <BiLogoTailwindCss color="rgba(34, 181, 207, 0.5)"/>],
+            teknologi: [<BiLogoReact color="rgb(47, 252, 255)"size={25}/>, <BiLogoTailwindCss color="rgba(34, 181, 207, 0.5)"size={25}/>],
             classBg: 'bg-scatter',
             classImage: 'img-scatter',
             classBorder: 'border-scatter',
@@ -18,7 +18,7 @@ export default function Project() {
         {
             Nama: 'AlquranZamanNow.com',
             deskripsi: 'Membuat Website Yang berisi Surah di dalam Alquran',
-            teknologi: [<BiLogoReact color="rgb(47, 252, 255)"/>, <BiLogoTailwindCss color="rgba(34, 181, 207, 0.5)"/>],
+            teknologi: [<BiLogoReact color="rgb(47, 252, 255)"size={25}/>, <BiLogoTailwindCss color="rgba(34, 181, 207, 0.5)"size={25}/>],
             classBg: 'bg-alquran',
             classImage: 'img-alquran',
             classBorder: 'border-alquran',
@@ -28,13 +28,23 @@ export default function Project() {
         {
             Nama: 'Catatanku.com',
             deskripsi: 'Anda dapat Menyimpan Catatan anda dalam website ini',
-            teknologi: [<BiLogoReact color="rgb(47, 252, 255)"/>, <BiLogoRedux color="violet"/>, <BiLogoTailwindCss color="rgba(34, 181, 207, 0.5)"/>],
+            teknologi: [<BiLogoReact color="rgb(47, 252, 255)" size={25}/>, <BiLogoRedux color="violet"size={25}/>, <BiLogoTailwindCss color="rgba(34, 181, 207, 0.5)"size={25}/>],
             classBg: 'bg-catatan',
             classImage: 'img-catatanku',
             classBorder: 'border-catatanku',
             linkWeb: 'https://catatanku-app.netlify.app/',
             linkGitHub: 'https://github.com/Sastrapradana06/Catatanku-app'
-        }
+        },
+        {
+            Nama: 'KomangResto.com',
+            deskripsi: 'Pembelian Makanan & Minuman Di Sebuah Restaurant Dalam Tampilan Mobile',
+            teknologi: [<BiLogoReact color="rgb(47, 252, 255)" size={25}/>,'Zustand', <BiLogoTailwindCss color="rgba(34, 181, 207, 0.5)" size={25}/>],
+            classBg: 'bg-komang',
+            classImage: 'img-komang',
+            classBorder: 'border-komang',
+            linkWeb: 'https://komang-resto.netlify.app/',
+            linkGitHub: 'https://github.com/Sastrapradana06/komang-resto-app2'
+        },
     ]
 
     return (
@@ -63,7 +73,7 @@ export default function Project() {
                                         <div className="flex items-center gap-2 text-[30px] lg:text-[35px]">
                                             {projects.teknologi.map((stack, i) => {
                                                 return (
-                                                    <button className="animate-spin hover:animate-none text-[23px] lg:text-[30px]" key={i}>
+                                                    <button className="text-[1rem]" key={i}>
                                                         {stack}
                                                     </button>
                                                 )

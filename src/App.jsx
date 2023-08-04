@@ -15,10 +15,9 @@ function App() {
 
   useEffect(() => {
     AOS.init({
-      once:false ,
+      once:true ,
     })
 })
-console.log(AOS);
 
   return (
     <div className="h-[200vh]">

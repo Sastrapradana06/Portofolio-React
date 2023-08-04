@@ -171,6 +171,9 @@
 #bg-catatan {
     background-image: linear-gradient(to bottom, rgba(139, 61, 5, 0.425), black);
 }
+#bg-komang {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(255, 255, 255, 0.382));
+}
 
 #border-scatter {
     width: 130px;
@@ -199,6 +202,15 @@
     position: relative;
     z-index: 4;
 }
+#border-komang {
+    width: 130px;
+    height: 10px;
+    margin-top: -15px;
+    transform: rotate(-5deg);
+    background-color: rgba(255, 255, 255, 0.545);
+    position: relative;
+    z-index: 4;
+}
 
 #img-scatter {
     background-image: url(./assets/ASC.png);
@@ -219,6 +231,12 @@
     background-size: cover;
     background-position: 0px -18px;
     filter: contrast(2)
+}
+#img-komang {
+    background-image: url(./assets/komang.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -8px;
 }
 
 .bg-contact {
@@ -263,6 +281,9 @@
     }
     #img-catatanku {
         background-position: 0px -75px;
+    }
+    #img-komang {
+        background-position: 0px -58px;
     }
     #img-contact {
         background-size: cover;
