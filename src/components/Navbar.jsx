@@ -50,14 +50,14 @@ export default function Navbar() {
             <div className=" w-[50px] m-auto h-[350px] rounded-lg bg-blur-white z-10 flex flex-col items-center justify-around lg:w-[50px]">
                 {iconsNav.map((pages, i) => {
                     return (
-                        <div className="container-icons  w-[30px]" key={i}>
+                        <div className="container-icons  w-[30px] bottom-1" key={i}>
                             <button className=" items-center gap-1 text-[gray] text-[25px] hover:text-[aqua] duration-300 flex btn-page hover:bg-[rgba(255,255,255,0.1)] rounded-xl p-1">
                                 {pages.icons}
-                                <p className="text-page" id="text-page">
-                                    <a href={pages.url} >
+                                <a href={pages.url} className="text-page" id="text-page">
+                                    <p>
                                         {pages.page}
-                                    </a>
-                                </p>
+                                    </p>
+                                </a>
                             </button>
                         </div>
                     )
